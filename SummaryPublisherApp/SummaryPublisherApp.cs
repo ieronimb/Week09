@@ -4,12 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Week09
+namespace SummaryPublisherApp
 {
-    class Program
+    class SummaryPublisherApp
     {
         static void Main(string[] args)
         {
+
         }
     }
 }

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FEAC6A40-C61A-4A38-9C1B-49A68FC00773}</ProjectGuid>
+    <ProjectGuid>{D1AE3AEC-25B5-4EC3-997F-9D921C2CBE4F}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Week09</RootNamespace>
-    <AssemblyName>Week09</AssemblyName>
+    <RootNamespace>SummaryPublisherApp</RootNamespace>
+    <AssemblyName>SummaryPublisherApp</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,9 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\firstConnection.cs" />
-    <Compile Include="Classes\InsertPublisher.cs" />
-    <Compile Include="InsertPublisherApp.cs" />
+    <Compile Include="SummaryPublisherApp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
