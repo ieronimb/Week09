@@ -43,7 +43,7 @@ namespace CrudBookApp
                 Console.WriteLine("d. Enter the book's price:");
                 decimal newPrice = Convert.ToDecimal(Console.ReadLine());
 
-                Book.Update(connection, newTitle, newPublisherId, newYear, newPrice);
+                Book.Update(connection, newTitle, newPublisherId, newYear, newPrice, 2);
 
                 firstConnection.Dispose(connection);
             }
