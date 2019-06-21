@@ -15,22 +15,24 @@ namespace CrudBookApp.Classes
         int newPublisherId { get; set; }
         int newYear { get; set; }
         decimal newPrice { get; set; }
+        int currentId {get;set;}
 
 
-        public static void Update(SqlConnection connection, string newTitle, int newPublisherId, int newYear, decimal newPrice)
+        public static void Update(SqlConnection connection, string newTitle, int newPublisherId, int newYear, decimal newPrice, int currrentId)
         {
             try
             {                
                 using (connection)
                 {                    
                     using (SqlCommand command = new SqlCommand("UPDATE Book SET Title=@newTitle, PublisherId=@newPublisherId, " +
-                                                                "Year=@newYear, Price=@newPrice", connection))
+                                                                "Year=@newYear, Price=@newPrice Where PublisherId = @currentId", connection))
                     {                     
                                                 
                         command.Parameters.AddWithValue("@newTitle", newTitle);
                         command.Parameters.AddWithValue("@newPublisherId", newPublisherId);
                         command.Parameters.AddWithValue("@newYear", newYear);
                         command.Parameters.AddWithValue("@newPrice", newPrice);
+                         command.Parameters.AddWithValue("@currentId", currentId);
 
 
 
