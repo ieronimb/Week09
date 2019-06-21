@@ -12,13 +12,19 @@ namespace Week09.Classes
         /*1. Create a console app named InsertPublisherApp to connect to local database.*/
 
         //-- Code for a connection object
-        public static SqlConnection GetConnection()
-        {
-            string stringConnect = "Data Source=.;Initial Catalog=Week9;Integrated Security=True";
-            SqlConnection connect = new SqlConnection(stringConnect);
-            connect.Open();
-            return connect;
+        string tableName { get; set; }
+        public static SqlConnection GetConnection(string tableName)
+        {                    
+            
+                string stringConnect = "Data Source=.;Initial Catalog=" + tableName + ";Integrated Security=True";
+                SqlConnection connect = new SqlConnection(stringConnect);
+                connect.Open();
+                return connect;            
         }
+        
+
+
+
 
         //-- To close the connection and dispose object
         public static void Dispose(SqlConnection connect)

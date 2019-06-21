@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D1AE3AEC-25B5-4EC3-997F-9D921C2CBE4F}</ProjectGuid>
+    <ProjectGuid>{06A24A34-F75D-4283-A111-5244D05B612A}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>SummaryPublisherApp</RootNamespace>
-    <AssemblyName>SummaryPublisherApp</AssemblyName>
+    <RootNamespace>CrudBookApp</RootNamespace>
+    <AssemblyName>CrudBookApp</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,8 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\Select.cs" />
-    <Compile Include="SummaryPublisherApp.cs" />
+    <Compile Include="Classes\ExScalar.cs" />
+    <Compile Include="Classes\Book.cs" />
+    <Compile Include="CrudBookApp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

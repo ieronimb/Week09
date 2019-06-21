@@ -46,7 +46,7 @@ namespace Week09.Classes
                 command.Parameters.Add(nameSqlParameter);
                 command.Parameters.Add(publisherIdSqlParameter);         
                          
-                var returnedValue = command.ExecuteScalar();
+                int returnedValue = (int)command.ExecuteScalar();
 
                 Console.WriteLine(returnedValue);
             }

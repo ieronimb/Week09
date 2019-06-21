@@ -12,12 +12,16 @@ namespace Week09
 {
     class InsertPublisherApp
     {
-        /*With this console read the name of publisher and insert a new publisher to database.
-        //Use SQL parameters for that. Print the inserted id(Execute scalar with select identity)  - nu e facut*/
+        /*1. Create a console app named InsertPublisherApp to connect to local database.
+          2. With this console read the name of publisher and insert a new publisher to database.
+          2.1. Use SQL parameters for that. 
+          2.2. Print the inserted id(Execute scalar with select identity)  -> Not done*/
 
         static void Main(string[] args)
         {
-            using (var connection = firstConnection.GetConnection())
+            Console.WriteLine("Please insert the table's name you want to connect:");
+            string tableName = Console.ReadLine();
+            using (var connection = firstConnection.GetConnection(tableName))
             {   
                 
                 Console.WriteLine("1. Enter the Publisher's name:");
